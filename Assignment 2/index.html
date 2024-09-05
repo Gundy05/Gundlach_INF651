@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Challenges</title>
+    <style>
+        h4{
+            font-weight: normal;
+        }
+        p {
+            text-indent: 1.25em; /* Adjust the value as needed */
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 2 Challenges</h1>
+
+    <h4>1.) Variables and Data Types</h4>
+    <button onclick="variablesAndDataTypes()">Display in Console</button><br><br>
+
+    <h4>2.) Basic Arithmetic Operations</h4>
+    <p>The numbers used are 10 and 5</p>
+    <button onclick="basicArithmeticOperations()">Display in Console</button><br><br>
+
+    <h4>3.) Working with Strings</h4>
+    <p>The string used is "Hello, world!"</p>
+    <button onclick="workingWithStrings()">Display in Console</button><br><br>
+
+    <h4>4.) Math Object</h4>
+    <p>The number used is -9</p>
+    <button onclick="mathObject()">Display in Console</button><br><br>
+
+    <h4>5.) Boolean Logic and Comparison Operators</h4>
+    <p>The numbers used are 10 and 20</p>
+    <button onclick="booleanLogicAndComparison()">Display in Console</button><br><br>
+
+    <h4>6.) Logical Operators</h4>
+    <button onclick="logicalOperators()">Display in Console</button><br><br>
+
+    <h4>7.) Using Template Literals</h4>
+    <button onclick="templateLiterals()">Display in Console</button>
+
+    <script>
+        // 1. Variables and Data Types
+        function variablesAndDataTypes() {
+            let name = "Ethan Hunt";
+            let age = 25;
+            let isStudent = true;
+            console.clear();
+            console.log(name, typeof name); // Ethan Hunt string
+            console.log(age, typeof age); // 25 number
+            console.log(isStudent, typeof isStudent); // true boolean
+        }
+
+        // 2. Basic Arithmetic Operations
+        function basicArithmeticOperations() {
+            let num1 = 10;
+            let num2 = 5;
+            console.clear();
+            console.log("Addition:", num1 + num2); // 15
+            console.log("Subtraction:", num1 - num2); // 5
+            console.log("Multiplication:", num1 * num2); // 50
+            console.log("Division:", num1 / num2); // 2
+        }
+
+        // 3. Working with Strings
+        function workingWithStrings() {
+            let sentence = "Hello, world!";
+            console.clear();
+            console.log("Length:", sentence.length); // 13
+            console.log("First character:", sentence.charAt(0)); // H
+            console.log("Last character:", sentence.charAt(sentence.length - 1)); // !
+        }
+
+        // 4. Math Object
+        function mathObject() {
+            let negativeNumber = -9;
+            console.clear();
+            console.log("Square root:", Math.sqrt(Math.abs(negativeNumber))); // 3
+            console.log("Squared:", Math.pow(negativeNumber, 2)); // 81
+            console.log("Absolute value:", Math.abs(negativeNumber)); // 9
+        }
+
+        // 5. Boolean Logic and Comparison Operators
+        function booleanLogicAndComparison() {
+            let number1 = 10;
+            let number2 = 20;
+            console.clear();
+            console.log("Is number1 greater than number2?", number1 > number2); // false
+            console.log("Is number1 less than number2?", number1 < number2); // true
+            console.log("Is number1 equal to number2?", number1 === number2); // false
+        }
+
+        // 6. Logical Operators
+        function logicalOperators() {
+            let bool1 = true;
+            let bool2 = false;
+            console.clear();
+            console.log("Logical AND:", bool1 && bool2); // false
+            console.log("Logical OR:", bool1 || bool2); // true
+            console.log("Logical NOT:", !bool1); // false
+        }
+
+        // 7. Using Template Literals
+        function templateLiterals() {
+            let firstName = "Ethan";
+            let lastName = "Hunt";
+            console.clear();
+            console.log(`Hello, ${firstName} ${lastName}!`); // Hello, Ethan Hunt!
+        }
+    </script>
+</body>
+</html>
