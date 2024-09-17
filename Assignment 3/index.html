@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Challenges</title>
+    <script>
+        function startGuessingGame() {
+            let randomNumber = Math.floor(Math.random() * 10) + 1;
+            let guess = 0;
+
+            while (guess !== randomNumber) {
+                guess = parseInt(prompt("Guess a number between 1 and 10:"));
+                if (guess === randomNumber) {
+                    alert("Congratulations! You guessed the correct number.");
+                } else {
+                    alert("Try again!");
+                }
+            }
+        }
+
+        function startPasswordValidator() {
+            let password = prompt("Set your password:");
+            let confirmPassword;
+
+            do {
+                confirmPassword = prompt("Re-enter your password for confirmation:");
+                if (confirmPassword !== password) {
+                    alert("Passwords do not match. Please try again.");
+                }
+            } while (confirmPassword !== password);
+
+            alert("Password confirmed successfully!");
+        }
+
+        function startMultiplicationTable() {
+            let number = parseInt(prompt("Enter a number to generate its multiplication table:"));
+            alert("Check the console log!")
+
+            for (let i = 1; i <= 10; i++) {
+                console.log(`${number} x ${i} = ${number * i}`);
+            }
+        }
+
+        function startGradeEvaluator() {
+            let score = parseInt(prompt("Enter your score (0-100):"));
+            let grade;
+
+            if (score >= 90 && score <= 100) {
+                grade = 'A';
+            } else if (score >= 80 && score <= 89) {
+                grade = 'B';
+            } else if (score >= 70 && score <= 79) {
+                grade = 'C';
+            } else if (score >= 60 && score <= 69) {
+                grade = 'D';
+            } else if (score < 60) {
+                grade = 'F';
+            } else {
+                grade = 'Invalid score';
+            }
+
+            alert(`Your grade is: ${grade}`);
+        }
+
+        function startDayFinder() {
+            let dayNumber = parseInt(prompt("Enter a number between 1 and 7:"));
+            let day;
+
+            switch (dayNumber) {
+                case 1:
+                    day = "Sunday";
+                    break;
+                case 2:
+                    day = "Monday";
+                    break;
+                case 3:
+                    day = "Tuesday";
+                    break;
+                case 4:
+                    day = "Wednesday";
+                    break;
+                case 5:
+                    day = "Thursday";
+                    break;
+                case 6:
+                    day = "Friday";
+                    break;
+                case 7:
+                    day = "Saturday";
+                    break;
+                default:
+                    day = "Invalid input";
+            }
+
+            alert(`The day is: ${day}`);
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Challenges</h1>
+    <button onclick="startGuessingGame()">Guessing Game</button>
+    <button onclick="startPasswordValidator()">Password Validator</button>
+    <button onclick="startMultiplicationTable()">Multiplication Table Generator</button>
+    <button onclick="startGradeEvaluator()">Grade Evaluator</button>
+    <button onclick="startDayFinder()">Day Finder</button>
+</body>
+</html>
