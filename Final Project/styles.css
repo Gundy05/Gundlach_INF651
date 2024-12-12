@@ -1,0 +1,462 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to left, #d4842b, #e5b551);
+}
+
+header {
+    background: linear-gradient(to right, #02A4D3, #54bc7a);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-container input {
+    padding: 5px;
+    font-size: 2vw;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    border-right: none;
+}
+
+.search-bar-container button {
+    padding: 5px 5px;
+    font-size: 2vw;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #d4842b;
+    color: white;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+.search-bar-container button:hover {
+    background-color: #02A4D3;
+}
+
+.left-image, .right-image {
+    width: 10vw; /* Adjust the width as needed */
+    height: auto;
+}
+
+.left-image {
+    margin-right: 10px; /* Space between image and text */
+}
+
+.right-image {
+    margin-left: 10px; /* Space between image and text */
+}
+
+.dude {
+    color: #02A4D3;
+    font-weight: bold;
+}
+
+.contact-section p {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.paragraph-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 150px;
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+}
+
+main img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#calendar {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+}
+
+#calendar header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3b4143;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#calendar header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #02A4D3;
+}
+
+#calendar header button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #02A4D3;
+}
+
+#calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#calendar th, #calendar td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#calendar th {
+    background: #02A4D3;
+    color: white;
+}
+
+#calendar td {
+    cursor: pointer;
+    position: relative;
+}
+
+#calendar .today {
+    background: #3b4143;
+    color: #02A4D3;
+}
+
+#on-air {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: 2px solid #3b4143;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #3b4143;
+    font-size: 2vw;
+    cursor: default;
+}
+
+#watch-button { 
+    display: inline-block; 
+    margin: 10px auto; 
+    padding: 10px 20px; 
+    border: 2px solid #02A4D3; 
+    border-radius: 10px; 
+    background-color: #02A4D3; 
+    color: white; 
+    font-size: 2vw; 
+    text-decoration: none; 
+    cursor: pointer; 
+} 
+#watch-button:hover { 
+    background-color: 
+    #54bc7a;
+}
+
+@media (max-width: 1024px) {
+    main img {
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 2.5vw;
+    }
+
+    .search-bar-container input, .search-bar-container button {
+        font-size: 2.5vw;
+    }
+}
+
+section {
+    background: linear-gradient(to bottom, #02A4D3, #54bc7a);
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.contact-section {
+    background: linear-gradient(to left, #d4842b, #e5b551);
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#greeting-message {
+    margin: 30px 0;
+    font-size: 5vw;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: -5px;
+    font-family: 'Lucida Handwriting', sans-serif;
+    font-style: oblique;
+    font-variant-caps: small-caps;
+}
+
+.highlighted-text {
+    color: white;
+}
+
+h4 {
+    font-size: 4vw;
+    margin: 30px 0;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-style: oblique;
+    text-decoration-style: wavy;
+}
+
+form {
+    margin-top: 20px;
+    padding: 40px 80px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+form input {
+    width: 48%;
+    padding: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #02A4D3;
+    font-size: 1.2em;
+    color: white;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+form textarea::placeholder {
+    color: white;
+}
+
+.form-label {
+    display: block;
+    text-align: left;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 15px;
+}
+
+form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #02A4D3;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: white;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #02A4D3;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #54bc7a;
+}
+
+p {
+    font-size: 1.8vw;
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+}
+
+.banner-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer {
+    font-size: 1.6vw;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .search-bar-container {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-bar-container input, .search-bar-container button {
+        width: calc(100% - 10px);
+        margin: 5px 5px;
+        font-size: 2.5vw;
+    }
+
+    .search-bar-container button {
+        padding: 5px 2.5vw;
+        margin-left: -5px;
+    }
+
+    #greeting-message {
+        font-size: 6vw;
+        letter-spacing: 0.1em;
+    }
+
+    h4 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 3vw;
+        max-width: 100%;
+        padding: 15px 50px;
+        text-align: left;
+    }
+
+    .banner-images img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .left-image, .right-image {
+        width: 20vw;
+    }
+
+    #calendar header {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    #calendar header h2 {
+        font-size: 4vw;
+    }
+
+    #calendar th, #calendar td {
+        padding: 5px;
+        font-size: 3vw;
+    }
+
+    #calendar table {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 3vw;
+    }
+
+    .search-bar-container input, .search-bar-container button {
+        font-size: 3vw;
+        margin-left: 65px;
+        margin-right: -50px;
+    }
+
+    .search-bar-container button {
+        margin-left: 50px;
+        margin-right: 80px;
+    }
+
+    #greeting-message {
+        font-size: 7vw;
+        letter-spacing: 0.1em;
+    }
+
+    h4 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 4vw;
+        text-align: left;
+        padding: 15px 10px;
+    }
+
+    footer {
+        font-size: 2vw;
+    }
+
+    .left-image, .right-image {
+        width: 15vw;
+    }
+
+    .paragraph-container {
+        padding: 20px 30px; /* Adjusted padding for smaller screens */
+    }
+
+    #calendar header {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    #calendar header h2 {
+        font-size: 5vw;
+    }
+
+    #calendar th, #calendar td {
+        padding: 5px;
+        font-size: 2.5vw;
+    }
+
+    #calendar table {
+        font-size: 3vw;
+    }
+}
+
